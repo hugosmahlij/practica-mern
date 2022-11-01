@@ -1,13 +1,83 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+html {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.card {
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: gray;
+  height: 400px;
+  width: 300px;
+  margin: 20px;
+}
+
+.card_category {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.card_img {
+  overflow: hidden;
+  object-fit: cover;
+  height: 200px;
+}
+
+.card_img img {
+  object-fit: cover;
+  width: 100%;
+  min-height: inherit;
+}
+
+.card_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 20px;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.card_description {
+  padding-left: 8px;
+  height: 200px;
+  color: white;
+  font-size: medium;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+}
+
+.btn_L,
+.btn_UP,
+.btn_R {
+  width: 80px;
+  height: 30px;
+  color: white;
+  background-color: brown;
+  border-radius: 0;
 }
